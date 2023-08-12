@@ -1,9 +1,14 @@
+import Link from 'next/link'
+import LinkPage from '../../Link'
+
 const NavBar = () => {
 
 return (
     <div className="navbar bg-red-900">
         <div className="flex-1">
-            <a className="font-serif btn btn-ghost normal-case text-xl text-white">Gastronolab</a>
+            <Link href='/' className="font-serif btn btn-ghost normal-case text-xl text-white">Gastronolab</Link>
+            <Link href='/about'><LinkPage label='About'/></Link>
+            <Link href='/myProfile'><LinkPage label='my Profile'/></Link>
         </div>
         <div className="flex-none gap-2">
             <div className="form-control">
