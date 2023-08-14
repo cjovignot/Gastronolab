@@ -39,10 +39,10 @@ export default function RootLayout({ children }) {
             font-family: 'Inter', sans-serif;
           }
         `}</style>
-      </body>
       <footer>
           <Footer />
       </footer>
+      </body>
     </html>
   );
 }
