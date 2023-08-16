@@ -23,7 +23,7 @@ const AddModal = () => {
             {/* Put this part before </body> tag */}
             <input type="checkbox" id="my_modal_6" className="modal-toggle" />
             <div className="modal text-black">
-                <div className="modal-box">
+                <div className="modal-box glass">
                     <h3 className="font-bold text-xl text-center">Share a new reciepe</h3>
 
                     <form action="submit">
