@@ -1,0 +1,85 @@
+{
+    "gastronolab": {
+        "title": "Gastronolab"
+    },
+    "pages": {
+        "home": {
+            "welcome": {
+                "title": "Bienvenue sur Gastronolab",
+                "message": "Chez Gastronolab, nous sommes passionnés par l'art de la cuisine et la beauté de la nature. Notre mission est de célébrer le mariage harmonieux de la créativité culinaire et de la conscience environnementale. Que vous soyez un chef en herbe ou un cuisinier expérimenté, nos recettes respectueuses de la nature, nos astuces de cuisine et nos pratiques durables vous inspireront à créer des plats savoureux tout en préservant notre planète.\nRejoignez-nous dans un voyage délicieux où chaque bouchée est une célébration de la saveur et un engagement envers un monde plus vert et plus durable. Cuisinons ensemble un avenir plus lumineux !"
+            },
+            "collections": {
+                "title": "Collections"
+            }
+        }
+    },
+    "menu": {
+        "pages": {
+            "profile": {
+                "title": "Profile"
+            },
+            "favorites": {
+                "title": "Favoris"
+            },
+            "culture": {
+                "title": "Culture"
+            },
+            "season_reciepes": {
+                "title": "Recettes de saison"
+            }
+        }
+    },
+    "buttons": {
+        "login": {
+            "title": "Connexion"
+        },
+        "logout": {
+            "title": "Déconnexion"
+        },
+        "signup": {
+            "title": "Inscription"
+        },
+        "discover": {
+            "title": "Découvrir"
+        }
+    },
+    "filters": {
+        "plants": {
+            "title": "Plantes"
+        },
+        "usage": {
+            "title": "Utilisation"
+        },
+        "seedling": {
+            "title": "Semis"
+        },
+        "harvest": {
+            "title": "Récolte"
+        }
+    },
+    "seasons": {
+        "spring": {
+            "title": "Printemps"
+        },
+        "summer": {
+            "title": "Eté"
+        },
+        "autumn": {
+            "title": "Automne"
+        },
+        "winter": {
+            "title": "Hiver"
+        }
+    },
+    "calendar": {
+        "day": {
+            "title": "Jour"
+        },
+        "month": {
+            "title": "Mois"
+        },
+        "year": {
+            "title": "Année"
+        }
+    }
+}

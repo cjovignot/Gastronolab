@@ -1,9 +1,13 @@
+"use client"
 import Image from 'next/image'
 import Link from 'next/link'
+import { useTranslation } from 'react-i18next';
 import Welcome from './components/Home/welcome'
 import Card from './components/Card/card'
 
+
 export default function Home() {
+  const { t } = useTranslation();
 
   const reciepes = {
     title: "All reciepes",
@@ -33,7 +37,7 @@ export default function Home() {
   return (
     <div>
       <Welcome />
-      <h1 id="collectionTitle" className="text-center text-5xl font-bold mt-20">COLLECTIONS</h1>
+      <h1 id="collectionTitle" className="text-center text-5xl font-bold mt-20">{t('pages.home.collections.title')}</h1>
       <div className="flex flex-wrap justify-center w-[70%] m-auto my-10">
         <Card props={reciepes}/>
         <Card props={beverage}/>

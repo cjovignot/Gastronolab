@@ -1,13 +1,17 @@
+"use client"
 import Link from "next/link";
 import Modal from '../Modal/modal'
 import AddModal from '../addModal/addModal'
 import SearchBar from '../searchBar/searchBar'
+import DropdownMenu from '../MenuDropdown'
+import { useTranslation } from 'react-i18next';
 import React, { useState, useEffect } from 'react'
 
 /**
  * Navbar element
  */
 const Navbar = () => {
+    const { t } = useTranslation();
     const [showButton, setShowButton] = useState(false);
 
     const backToTop = () => {
@@ -41,25 +45,17 @@ const Navbar = () => {
     return (
         <div className="navbar bg-red-800 text-white h-20">
             <div className="navbar-start">
-                <div className="dropdown">
-                <label tabIndex={0} className="btn btn-ghost btn-circle">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
-                </label>
-                <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow text-black bg-white rounded-box">
-                    <li><Link href='/pages/myProfile' className='btn-sm btn-outline'>Profile</Link></li>
-                    <li><Link href='/pages/favorites' className='btn-sm btn-outline'>Favorites</Link></li>
-                </ul>
-                </div>
+                <DropdownMenu />
                 <SearchBar />
             </div>
             <div className="navbar-center">
-                <Link href="/" className="btn btn-ghost normal-case text-xl">GastronoLab</Link>
+                <Link href="/" className="btn btn-ghost normal-case text-xl">{t("gastronolab.title")}</Link>
             </div>
             <div className="navbar-end">
                 <AddModal />
 
-                <Link onClick={()=>window.my_modal_1.showModal()} href="" className="btn btn-sm btn-ghost normal-case text-md">Login</Link>
-                <Link onClick={()=>window.my_modal_2.showModal()} href="" className="btn btn-sm btn-ghost normal-case text-md">SignUp</Link>
+                <Link onClick={()=>window.my_modal_1.showModal()} href="" className="btn btn-sm btn-ghost normal-case text-md">{t("buttons.login.title")}</Link>
+                <Link onClick={()=>window.my_modal_2.showModal()} href="" className="btn btn-sm btn-ghost normal-case text-md">{t("buttons.signup.title")}</Link>
                 <Modal />
             </div>
             

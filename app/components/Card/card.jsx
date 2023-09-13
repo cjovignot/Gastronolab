@@ -1,6 +1,9 @@
+"use client"
 import Link from 'next/link'
+import { useTranslation } from 'react-i18next';
 
 const Card = ({props}) => {
+    const { t } = useTranslation();
 
     const cardStyle = {
         width: '384px', // Set the desired width
@@ -18,7 +21,7 @@ const Card = ({props}) => {
                 <h2 className="card-title">{props.title}</h2>
                 <p>{props.content}</p>
                 <div className="card-actions justify-end">
-                <Link href={props.linkPath} className="btn btn-outline rounded-full btn-sm">Explore</Link>
+                <Link href={props.linkPath} className="btn btn-outline rounded-full btn-sm">{t("buttons.discover.title")}</Link>
                 </div>
             </div>
         </div>
